@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+ul,
+ol {
+    list-style: none;
+}
+.game{
+    display: flex;
+}
+.game-board{
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.game-board .box-wrapper{
+    display:flex;
+    width: 120px;
+    flex-wrap: wrap;
+}
+.game-board .box-wrapper .box-item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}
+.game-info{
+    margin-left: 40px;
 }
